@@ -17,7 +17,7 @@ To build to the project:
 ### Running the Hello Hystrix example
 To start the a hystrix example
 
-     cd examples/hello-hystrix
+     cd examples/hello-world/hello-hystrix
      mvn clean package fabric8:build fabric8:deploy
      
 This example is a simple hello world servlet, that uses a hystrix command to obtain the hello world message.
