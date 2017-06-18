@@ -54,7 +54,7 @@ public class HelloRibbonServlet extends HttpServlet {
             .withHystrixProperties(
                     HystrixObservableCommand.Setter
                             .withGroupKey(HystrixCommandGroupKey.Factory.asKey("HelloRibbonGroup"))
-                            .andCommandKey(HystrixCommandKey.Factory.asKey("HelloRibbon"))
+                            .andCommandKey(HystrixCommandKey.Factory.asKey("HelloCommand"))
                             .andCommandPropertiesDefaults(
                                     HystrixCommandProperties.Setter().withExecutionTimeoutInMilliseconds(5000)
                             )

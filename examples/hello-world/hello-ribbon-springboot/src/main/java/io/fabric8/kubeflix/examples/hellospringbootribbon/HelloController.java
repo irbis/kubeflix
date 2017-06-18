@@ -30,7 +30,8 @@ public class HelloController {
     private RestTemplate restTemplate;
 
     @RequestMapping("/hello")
-    @HystrixCommand(fallbackMethod = "helloFallback", commandProperties = {
+    @HystrixCommand(fallbackMethod = "helloFallback", groupKey = "HelloRibbonGroup", commandKey = "HelloCommand",
+            commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")
     })
     public String hello() {
