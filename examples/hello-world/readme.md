@@ -13,7 +13,14 @@ Instructions
 To build to the project:
 
     mvn clean install   
-        
+
+### Set up environment variables to work with kubernetes cluster
+export DOCKER_HOST=<docker_host>
+export K8S_NAMESPACE=<kubernetes namespace>
+export DOCKER_REGISTRY=<docker_registry>
+
+"docker_registry" address of registy from which kubernetes will take docker image to run.
+
 ### Running the Hello Hystrix example
 To start the a hystrix example
 

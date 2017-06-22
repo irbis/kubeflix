@@ -30,6 +30,12 @@
     <packaging>pom</packaging>
     <name>Kubeflix :: Examples</name>
 
+    <properties>
+        <docker.registry>${env.DOCKER_REGISTRY}</docker.registry>
+        <docker.url>${env.DOCKER_HOST}</docker.url>
+        <fabric8.namespace>${env.K8S_NAMESPACE}</fabric8.namespace>
+    </properties>
+
     <modules>
         <module>hello-world</module>
         <module>loanbroker</module>
