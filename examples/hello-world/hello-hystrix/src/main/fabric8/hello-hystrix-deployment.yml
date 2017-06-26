@@ -33,6 +33,7 @@ spec:
             fieldRef:
               fieldPath: "metadata.namespace"
         image: "${env.DOCKER_REGISTRY}/fabric8/hello-hystrix:${project.version}"
+        imagePullPolicy: "Always"
         name: "hello-hystrix"
         ports:
         - containerPort: 8080
